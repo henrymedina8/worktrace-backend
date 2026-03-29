@@ -18,7 +18,7 @@ const connectDB = async () => {
       logger.warn('MongoDB desconectado. Reintentando...');
     });
   } catch (error) {
-    logger.error('Error conectando a MongoDB:', error.message);
+    logger.error('Error conectando a MongoDB:', error);
     process.exit(1);
   }
 };
